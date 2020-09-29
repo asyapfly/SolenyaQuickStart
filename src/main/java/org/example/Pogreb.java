@@ -13,15 +13,12 @@ public class Pogreb {
         this.jars.add(jar);
     }
 
-    // TODO сделай конструктор, который заполняет рандомом погреб
-
-    // TODO сделай два метода с какой-то там вероятностью
-
-    //TODO взять первую попавшуюся банку по наклейке
+    /*
+    * Достает банку по наклейке @stickerName
+    * */
 
     public Jar getJarBySticker(String stickerName) throws Exception {
 
-        //Jar jar = new Jar(stickerName, Vegetables.BROCCOLI);
         Integer chance = new Random().nextInt(100);
         System.out.println(chance);
         if (chance <= 2){
@@ -44,7 +41,7 @@ public class Pogreb {
 
 
     /*
-       Кладет банку в погреб
+       Кладет банку @jar в погреб
     */
     public void putJarToPogreb(Jar jar) throws Exception {
         Integer chance = new Random().nextInt(100);
