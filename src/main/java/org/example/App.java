@@ -14,11 +14,10 @@ public class App
     public static void main(String[] args) throws Exception {
         System.out.println( "Добро пожаловать в наш Рог Изобилия! Довольствуйся всем, что есть и можно съесть!");
 
-        Vegetable[] vegetables = {Vegetable.ONION, Vegetable.BROCCOLI, Vegetable.CUCUMBER};
+        Jar jar = new Jar("Самодельный Кетчуп", Vegetable.getRandomVegetablesCollection());
 
-        Jar jar = new Jar("Самодельный Кетчуп", new ArrayList<Vegetable>(Collections.singleton(Vegetable.TOMATO)));
+        Jar jar2 = new Jar("Лечо с огурцами и брокколи", Vegetable.getRandomVegetablesCollection());
 
-        Jar jar2 = new Jar("Лечо с огурцами и брокколи", new ArrayList<Vegetable>(Arrays.asList(vegetables)));
         Pogreb pogreb = new Pogreb(jar);
 
         try{
