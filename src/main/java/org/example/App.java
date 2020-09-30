@@ -16,7 +16,7 @@ public class App
 
         Jar jar = new Jar("Самодельный Кетчуп", Vegetable.getRandomVegetablesCollection());
 
-        Jar jar2 = new Jar("Лечо с огурцами и брокколи", Vegetable.getRandomVegetablesCollection());
+        Jar jar2 = new Jar("Лечо с огурцами и брокколиии", Vegetable.getRandomVegetablesCollection());
 
         Pogreb pogreb = new Pogreb(jar);
 
