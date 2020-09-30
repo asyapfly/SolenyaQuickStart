@@ -22,7 +22,7 @@ public class App
 
         try{
             //достали банку
-           pogreb.getJarBySticker("Самодельный Кетчуп рококо");
+           pogreb.getJarBySticker("Самодельный Кетчуп");
            //положили обратно
            pogreb.putJarToPogreb(jar2);
         }
